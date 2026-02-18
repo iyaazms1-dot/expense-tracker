@@ -57,8 +57,8 @@ def index():
         filtered_expenses = []
         for e in expenses:
             try:
-                day, m, y = e.date.split("-")
-                if m == month and y == year:
+                y,m,d = e.date.split("-")
+                if m == month.zfill(2) and y == year:
                     filtered_expenses.append(e)
             except ValueError:
                 pass  # ignore bad date formats
@@ -108,4 +108,4 @@ def delete(index):
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0",port=5000)
+    app.run(host="0.0.0.0",port=5000)
