@@ -1,0 +1,26 @@
+[
+    {
+        "amount": 4000.0,
+        "category": "lunch",
+        "date": "18-02-2026",
+        "note": "lunchh"
+    },
+    {
+        "amount": 500.0,
+        "category": "dinner",
+        "date": "30-01-2026",
+        "note": "dinner"
+    },
+    {
+        "amount": 3343.0,
+        "category": "insurance",
+        "date": "22-03-2026",
+        "note": "life insurance"
+    },
+    {
+        "amount": 6788.0,
+        "category": "food",
+        "date": "06-02-2026",
+        "note": "dinner"
+    }
+]

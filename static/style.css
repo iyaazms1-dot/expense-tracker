@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 40px;
+    font-family: 'Inter', sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f8fafc);
+    color: #111827;
+}
+
+/* CONTAINER */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 20px;
+    padding: 32px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.section {
+    margin-top: 28px;
+}
+
+.total {
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+    color: #4f46e5;
+}
+
+/* FILTER FORM */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: center;
+}
+
+form label {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+/* BASE INPUT STYLE — ALL INPUTS */
+form input,
+.field input {
+    height: 48px;
+    padding: 12px 14px;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    line-height: 24px;
+    outline: none;
+    background-color: #ffffff;
+}
+
+form input:focus,
+.field input:focus {
+    border-color: #6366f1;
+}
+
+/* DATE INPUT — MAX ALIGNMENT POSSIBLE */
+input[type="date"] {
+    padding-right: 10px;                 /* calendar space */
+    font-family: 'Inter', sans-serif;
+}
+
+/* Calendar icon control (Chrome / Edge) */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+/* BUTTONS */
+.button {
+    height: 48px;
+    padding: 0 16px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #6366f1, #4f46e5);
+    color: white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 14px rgba(79, 70, 229, 0.3);
+}
+
+.button.secondary {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+/* LISTS */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 14px 16px;
+    margin-bottom: 10px;
+    background: #f9fafb;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* CATEGORY SUMMARY */
+.section h3 {
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+/* DELETE */
+.delete {
+    font-size: 18px;
+    text-decoration: none;
+    color: #ef4444;
+    transition: transform 0.15s ease;
+}
+
+.delete:hover {
+    transform: scale(1.15);
+}
+
+/* ADD EXPENSE FORM */
+.add-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+}
+
+.field label {
+    font-weight: 500;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+
+/* ACTION BUTTONS */
+.actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Expense</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Add Expense</h1>
+
+    <div class="section">
+        <form method="post" class="add-form">
+
+            <div class="field">
+                <label>Amount</label>
+                <input type="number" name="amount" placeholder="₹ Amount" required>
+            </div>
+
+            <div class="field">
+                <label>Category</label>
+                <input type="text" name="category" placeholder="Food, Rent, Travel..." required>
+            </div>
+
+            <div class="field">
+                <label>Date</label>
+                <input type="date" name="date" required>
+            </div>
+
+            <div class="field">
+                <label>Note</label>
+                <input type="text" name="note" placeholder="Optional note">
+            </div>
+
+            <div class="actions">
+                <button type="submit" class="button">Save Expense</button>
+                <a href="/" class="button secondary">Cancel</a>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+
+</body>
+</html>
